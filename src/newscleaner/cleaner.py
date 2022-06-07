@@ -7,6 +7,6 @@ def clean(text):
     rulesFile = open(filepath, 'r')
     rulesList = json.load(rulesFile)
     for substring in rulesList:
-        pattern = re.compile(re.escape(substring)+'.*')
+        pattern = re.compile(re.escape(substring))
         text = pattern.sub('', text)
     return text
