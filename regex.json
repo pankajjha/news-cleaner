@@ -1,9 +1,21 @@
-[
-    "<p>__",
-    "<p> The <em> Times </em>",
-    "<p>Copyright 2022 The Associated Press",
-    "<p><strong> MORE FROM WWD",
-    "<p><b>More information",
-    "<p><i> Copyright 2022 Nexstar",
-    "Inc. All rights reserved"
-]
+{
+    "prefix":[
+        "<p>",
+        "<p> The <em> Times </em>",
+        "<p>Copyright 2022 The Associated Press",
+        "<p><strong> MORE FROM WWD",
+        "<p><b>More information.*",
+        "<p><i> Copyright 2022 Nexstar",
+        "Inc. All rights reserved.*",
+        "<h2>More on NYTimes.com.*",
+        "<p><em>The Times is committed to publishing",
+        "<p> See all updates </p>",
+        "<h2> Latest updates </h2>",
+        "Thanks for reading! </a>",
+        "We’d like to hear what you think about this or any of our articles. Here are some",
+        "<a target=\"_blank\" href=\"https://www.facebook.com/BBCnews\".*",
+        "<a target=\"_blank\" href=\"https://play.google.com/store/apps/details?id=uk.co.bbc.hindi\"",
+        "Published<dd><span><span>",
+        "<p><i>Video journalist"
+    ]
+}
