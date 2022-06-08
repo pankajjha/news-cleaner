@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="newscleaner",
-    version="0.0.4",
+    version="0.0.5",
     author="Pankaj Jha",
     author_email="mail@pankajjha.me",
     description="Package to clean up waste postfix from articles",
