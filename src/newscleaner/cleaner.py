@@ -19,7 +19,7 @@ def clean(text):
             text = text.replace(j, i)
         return text
 
-    text = replace_all(text,tags)
+    text = replace_all(text,tagsList)
     text = re.sub(r'<[^<>]*>', ' ',text) 
     
     rulesList = rulesFile
@@ -40,7 +40,7 @@ def clean(text):
                 
      
     text = html.unescape(text) #decoding unicode entities using html parser
-    text = replace_all1(text,tags) 
+    text = replace_all1(text,tagsList) 
                 
      # cleaning emoji
     emoji_pattern = re.compile("["
