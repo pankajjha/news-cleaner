@@ -71,7 +71,7 @@
     "([}\\s]*Advertising[\\s]*{)",
     "([}\\s]*©[\\sA-Za-z0-9,/]*){",
     "({p}[\\s]*\\(REUTERS\\)[\\s]*{)([\"",
-    '({p}[\s]*\(AFP\)[\s]*{)([.a-zA-Z0-9/<>!,-_\s]*)',
+     "({p}[\\s]*\\(AFP\\)[\\s]*{)([.a-zA-Z0-9/<>!,-_\\s]*)",
     "({\\/p}[\\s]*Get[.a-zA-Z0-9\\/<>!,{}'\"%-’“”_\\s]*Enter Email[\\s])",
     "({p}[\\s]*RELATED:[\\sA-Za-z\\/<>!,.'\"‘“”_%-]*{/p})",
     "({p} This story first appeared on TODAY.com . More from TODAY: {\\/p})",
