@@ -132,8 +132,8 @@
     "\\|*(More News)\\|*[a-z</>\\sA-Z'-.0-9:_‘’|“”$–?.-…{}]+",
     "\\|*(More Entertainment)\\|*[a-z</>\\sA-Z'-.0-9:_‘’|“”$–?.-…{}]+",
     "\\|*(UP NEXT)\\|*[a-z</>\\sA-Z'-.0-9:_‘’|“”$–?.-…{}]+",
-    "\\|*(___)\|*[a-z</>\\sA-Z'-.0-9:_‘’|“”$–?.-…{}]+",
-    "<p> This story first appeared on\xa0 TODAY.com. More from TODAY: </p>",
+    "\\|*(___)\\|*[a-z</>\\sA-Z'-.0-9:_‘’|“”$–?.-…{}]+",
+    "<p> This story first appeared on\\\\xa0 TODAY.com. More from TODAY: <\\/p>",
     " This story first appeared on TODAY.com. More from TODAY: ",
     " More information on how to apply ",
     "To read more about the friends’ adventure,"
