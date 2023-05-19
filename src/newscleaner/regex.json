@@ -7,11 +7,11 @@
         "for all the latest news",
         "This email for free",
         "Check email",
-        "Headlines email"
+        "Headlines email",
+        "IST - "
     ],
     "perfect_match": [
         "This is a carousel. Use Next and Previous buttons to navigate",
-        "\\\\n",
         "Show More",
         "Show Less",
         "For NJ Advance",
@@ -21,6 +21,7 @@
         "Getty Image",
         "Click here to Subscribe",
         "More on this story",
+        "Image",
         "Image Source",
         "Image caption",
         "More News",
@@ -81,7 +82,25 @@
         "(Get Philly local news, weather forecasts, sports and entertainment stories to your inbox. Sign up for NBC Philadelphia newsletters.)",
         "({p}[\\s]*RELATED:[\\sA-Za-z/<>!,.'\"\u2018\u201c\u201d_%-]*{/p})",
         "({p} This story first appeared on TODAY.com . More from TODAY: {/p})",
-        "(Get San Diego local news, weather forecasts, sports and lifestyle stories to your inbox. Sign up for NBC San Diego newsletters.)"
+        "(Get San Diego local news, weather forecasts, sports and lifestyle stories to your inbox. Sign up for NBC San Diego newsletters.)",
+        "Advertising",
+        "([\\s]*Also read[\\s]*{/p})+[a-zA-Z{}=\".\\s/-\\d&#;,|<>:_'].+({/p})",
+        "(For more lifestyle news).+",
+        "(?:(?<=\\s)\\(With inputs from agencies\\))?\\s*",
+        "(({p}[\\s]*Read)+[a-zA-Z{}=\".\\s/-\\d&#;,<>]+(on The Eastern Herald.))+[a-zA-Z{}=\".\\s/-\\d&#;,<>]+",
+        "{p}{strong}[\\s]*Also Read \\|)+[a-zA-Z{}=\".\\s/-\\d&#;,<>:_']+({/strong}{/p})",
+        "({p}[\\s]*SHARE THIS ARTICLE ON[\\s]*{/p})+[a-zA-Z{}=\".\\s/-\\d&#;,*^@$!()+\\[\\]~`<>:_'\n?%]+",
+        "(\\([\\s]*Also read \\|)+[a-zA-Z{}=\".\\s/-\\d&#;,<>:_']+(\\))",
+        "(Also read:)+[a-zA-Z{}=\".\\s/-\\d&#;,<>:_']+(\\{\\/a\\}\\{\\/p\\})",
+        "(ALSO READ:)+[a-zA-Z{}=\".\\s/-\\d&#;,<>:_']+(\\{\\/a\\}\\{\\/p\\})",
+        "(Also Read:)+[a-zA-Z{}=\".\\s/-\\d&#;,<>:_']+(\\{\\/a\\})",
+        "(Also read \\|)+[a-zA-Z{}=\".\\s/-\\d&#;,<>:_\\'?]+(\\{\\/a\\})",
+        "([\\s]*Source:)+[\\sA-Za-z.]",
+        "(}\\[\\s]*top videos[\\s]*{/p})",
+        "(}[\\s]*Read all the)+[a-zA-Z{}=\".\\s/\\-\\d&#;,<>:()_]+(here[\\s]*{/p})+[a-zA-Z{}=\".\\s/\\-\\d&#;,<>:()_]+\"\"\"",
+        "({p}[\\s]*{/p})",
+        "({/a}[\\s]*{/a})",
+        "({strong}[\\s]*{/strong})"
     ],
     "suffix": [
         "<p>__",
@@ -135,6 +154,8 @@
         "<p> This story first appeared on\u00a0 TODAY.com. More from TODAY: </p>",
         " This story first appeared on TODAY.com. More from TODAY: ",
         " More information on how to apply ",
-        "To read more about the friends\u2019 adventure,"
+        "To read more about the friends\u2019 adventure,",
+        "Related Topics"
+
     ]
 }
