@@ -1,3 +1,9 @@
+import re
+import json
+import html
+import unicodedata
+import pkg_resources
+
 def clean(text):
     
     with open("tags.json", encoding="utf8") as file:
