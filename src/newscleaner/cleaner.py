@@ -1,13 +1,10 @@
-import re
-import json
-import pkg_resources
-
 def clean(text):
-    filepath = pkg_resources.resource_filename(__name__, 'regex.json')
-    rulesFile = open(filepath, 'r')
-    rulesList = json.load(rulesFile)
-    tagsFile = open(filepath,'r')
-    tagsList = json.load(tagsFile)
+    
+    with open("tags.json", encoding="utf8") as file:
+        tags = json.load(file)
+    
+    with open("regex.json", encoding="utf8") as file:
+        regex = json.load(file)
     
     def replace_all(text, dic):
         for i, j in dic.items():
@@ -19,12 +16,12 @@ def clean(text):
             text = text.replace(j, i)
         return text
 
-    text = replace_all(text,tagsList)
+    text = replace_all(text,tags)
     text = re.sub(r'<[^<>]*>', ' ',text) 
     
-    rulesList = rulesFile
-    for rule in rulesList:
-        rules = rulesList.get(rule)
+    #rulesList = rulesFile
+    for rule in regex:
+        rules = regex.get(rule)
         if rule == 'suffix': 
             for substring in rules:
                 pattern = re.compile(re.escape(substring)+'.*')
@@ -40,7 +37,7 @@ def clean(text):
                 
      
     text = html.unescape(text) #decoding unicode entities using html parser
-    text = replace_all1(text,tagsList) 
+    text = replace_all1(text,tags) 
                 
      # cleaning emoji
     emoji_pattern = re.compile("["
@@ -64,6 +61,7 @@ def clean(text):
                            "]+", flags=re.UNICODE)
     
     clean_text = emoji_pattern.sub(r'', text)
+    clean_text = re.sub("\n",'',clean_text)
     clean_text = unicodedata.normalize("NFKD",clean_text) #decoding utf-8 unicode data which is producing spacing
     
     # storing words in list with no extra spaces
@@ -71,5 +69,3 @@ def clean(text):
     
     
     return " ".join(clean_text)
-    
-    
